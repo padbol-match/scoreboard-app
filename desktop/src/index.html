@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Padbol Scoreboard</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <script>
+    //Fix for desktop app
+    const global = globalThis;
+  </script>
+  <style>
+    .loader {
+      position: fixed;
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #ED1B24; /* Red */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      top: 45%;
+      left: 45%;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <app-root>
+    <div class="loader"></div>
+  </app-root>
+</body>
+</html>

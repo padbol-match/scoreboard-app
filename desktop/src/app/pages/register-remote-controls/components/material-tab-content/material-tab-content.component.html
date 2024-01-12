@@ -1,0 +1,31 @@
+<form  autocomplete="off">
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile>
+      <button 
+        mat-raised-button 
+        type="button"
+        (click)="startSaving('1')"
+        [disabled]="loading"
+        [class.spinner]="loading">{{ 'pages.register_remote_controls.button_team1' | translate }}
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button 
+        mat-raised-button 
+        type="button"
+        (click)="startSaving('2')"
+        [disabled]="loading"
+        [class.spinner]="loading">{{ 'pages.register_remote_controls.button_team2' | translate }}
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button 
+        mat-raised-button 
+        type="button"
+        (click)="startSaving('3')"
+        [disabled]="loading"
+        [class.spinner]="loading">{{ 'pages.register_remote_controls.button_back' | translate }}
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

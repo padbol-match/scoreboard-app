@@ -1,0 +1,112 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/font";
+
+.form {
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    margin-top: 6px;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__login {
+    margin-right: 10px;
+    background-color: $black;
+    color: $white;
+    width: 100%;
+  }
+
+  &__forget {
+    font-size: 12px;
+    font-weight: $fw-lighter;
+    color: $blue;
+  }
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
+}
+
+.notification {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  height: 45px;
+  border-radius: 45px;
+
+  &_transparent {
+    &-red {
+      background-color: $red-15;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    &_white {
+      color: $white;
+    }
+  }
+
+  &__icon-wrapper {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_transparent {
+      color: $white-80;
+
+      &-red {
+        color: $red;
+      }
+    }
+
+    &_solid {
+      &-red {
+        color: $red;
+      }
+    }
+  }
+
+  &__icon-wrapper-circle {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    margin-right: 16px;
+
+    &_transparent {
+      &-red {
+        color: $red;
+        background-color: $red-15;
+      }
+    }
+  }
+}

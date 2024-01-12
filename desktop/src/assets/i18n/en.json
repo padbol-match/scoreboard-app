@@ -1,0 +1,45 @@
+{
+  "pages": {
+    "auth": {
+        "title": "Login",
+        "username": "Username",
+        "password": "Password",
+        "login": "Login",
+        "copyright": "Padbol - All rights reserved",
+        "login_error": "Credentials error"
+    },
+    "fields": {
+        "title": "Fields",
+        "id": "Id",
+        "press": "Pushs",
+        "press_team_1": "Press Team 1",
+        "press_team_2": "Press Team 2",
+        "press_back": "Press Back"
+    },
+    "register_remote_controls":{
+        "title": "Register Remote Controls",
+        "button_team1": "Button Team 1",
+        "button_team2": "Button Team 2",
+        "button_back": "Back Button",
+        "field_1": "Field 1",
+        "field_2": "Field 2",
+        "field_3": "Field 3",
+        "field_4": "Field 4"
+    }
+  },
+  "commons":{
+      "forms":{
+          "save": "Save"
+      },
+      "sidebar":{
+          "main": "Main",
+          "fields": "Fields",
+          "register_remote_controls": "Remote Controls"
+      },
+      "language":{
+          "spanish": "Spanish",
+          "english": "English"
+      }
+  }
+
+}

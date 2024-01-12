@@ -1,0 +1,27 @@
+{
+    "pages": {
+      "auth": {
+          "title": "Login",
+          "username": "Username",
+          "password": "Password",
+          "login": "Login",
+          "copyright": "Padbol - All rights reserved",
+          "login_error": "Credentials error"
+      }
+    },
+    "commons":{
+        "forms":{
+            "save": "Save"
+        },
+        "sidebar":{
+            "scoreboards": "Scoreboards",
+            "advertising": "Advertising"
+        },
+        "language":{
+            "spanish": "Spanish",
+            "english": "English"
+        }
+    }
+  
+  }
+  

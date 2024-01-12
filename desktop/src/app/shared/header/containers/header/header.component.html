@@ -1,0 +1,22 @@
+<mat-toolbar class="header">
+
+  <div class="header__title">
+    <button class="header__title-button" mat-mini-fab (click)="openMenu()">
+      <mat-icon *ngIf="!isMenuOpened" class="header__title-button-icon">menu</mat-icon>
+      <mat-icon *ngIf="isMenuOpened" class="header__title-button-icon">arrow_back</mat-icon>
+    </button>
+    <h6 class="header__title-text">
+      <img src="./assets/images/padbol_white.png" alt="Padbol" />
+    </h6>
+  </div>
+
+  <div class="header-toolbar">
+    <!--
+    <app-search></app-search>
+    -->
+    <mat-icon [class]="padbolMatchHubStatus">settings_input_component</mat-icon>
+    <app-language></app-language>
+    <app-user [user]="user$ | async" (signOut)="signOut()"></app-user>
+  </div>
+
+</mat-toolbar>

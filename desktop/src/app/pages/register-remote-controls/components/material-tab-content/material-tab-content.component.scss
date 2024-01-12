@@ -1,0 +1,25 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/font';
+@import 'src/app/styles/variables';
+
+.form {
+  width: 100%;
+
+  &__input {
+    width: 80%;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+
+  &__submit {
+    margin-right: 10px;
+    background-color: $black;
+    color: $white;
+    width: 20%;
+  }
+}

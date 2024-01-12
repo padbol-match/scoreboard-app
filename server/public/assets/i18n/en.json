@@ -1,0 +1,101 @@
+{
+    "pages": {
+        "auth": {
+            "title": "Login",
+            "username": "Username",
+            "password": "Password",
+            "login": "Login",
+            "copyright": "Padbol - All rights reserved",
+            "login_error": "Credentials error"
+        },
+        "scoreboards": {
+            "title": "Scoreboards",
+            "team1" : "Team 1",
+            "team2" : "Team 2",
+            "player1_team1" : "Player 1",
+            "player2_team1" : "Player 2",
+            "player3_team1" : "Player 3",
+            "player1_team2" : "Player 1",
+            "player2_team2" : "Player 2",
+            "player3_team2" : "Player 3",
+            "score": {
+                "sets": "Sets",
+                "start": "Start",
+                "finish": "Finish",
+                "up": "Up",
+                "down": "Down",
+                "team1": "Team 1",
+                "team2": "Team 2"
+            },
+            "no_match_in_progress": "No match in Progress",
+            "field_1": "Field 1",
+            "field_2": "Field 2",
+            "field_3": "Field 3",
+            "field_4": "Field 4"
+        },
+        "scoreboards_config": {
+            "title": "Scoreboards Configuration",
+            "field_1": "Field 1",
+            "field_2": "Field 2",
+            "field_3": "Field 3",
+            "field_4": "Field 4",
+            "error_min_length": "At least 3 characters required",
+            "error_max_length": "Max number of characters"
+        },
+        "advertising":{
+            "title": "Advertising",
+            "footer": "Footer",
+            "slides": "Slides",
+            "no_image_selected": "No image selected",
+            "slide_0": "Slide 1",
+            "slide_1": "Slide 2",
+            "slide_2": "Slide 3",
+            "slide_3": "Slide 4"
+        },
+        "register_devices": {
+            "title": "Register Devices",
+            "field_1": "Field 1",
+            "field_2": "Field 2",
+            "field_3": "Field 3",
+            "field_4": "Field 4",
+            "messages": {
+                "only_4_characters": "Only 4 characters"
+            }
+        },
+        "start_match": {
+            "title": "Let's Play!",
+            "team": "Team",
+            "team_1": "Team 1",
+            "team_2": "Team 2",
+            "player_1": "Player 1",
+            "player_2": "Player 2",
+            "player_3": "Player 3"
+        },
+        "field_qr":{
+            "title": "Field: "
+        }
+    },
+    "commons":{
+        "forms":{
+            "save": "Save",
+            "start": "Start",
+            "open_qr_code": "QR Code"
+        },
+        "sidebar":{
+            "scoreboards_config": "Scoreboards Configuration",
+            "scoreboards": "Scoreboards",
+            "advertising": "Advertising",
+            "register_devices": "Register Devices",
+            "register_remote_controls": "Register Remote Controls"
+        },
+        "language":{
+            "spanish": "Spanish",
+            "english": "English"
+        },
+        "notifications":{
+            "success": {
+                "message": "Token copied to clipboard"
+            }
+        }
+    }
+}

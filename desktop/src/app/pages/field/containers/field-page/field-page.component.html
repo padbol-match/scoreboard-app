@@ -1,0 +1,11 @@
+<app-layout>
+  <mat-toolbar class="page-header" role="heading">
+    <h1>{{'pages.fields.title' | translate}}</h1>
+  </mat-toolbar>
+
+  <div class="field-wrapper">
+    <app-material-table [data]="data$"></app-material-table>
+  </div>
+
+  <app-footer></app-footer>
+</app-layout>

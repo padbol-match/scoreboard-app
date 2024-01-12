@@ -1,0 +1,26 @@
+<form class="form" [formGroup]="form" (ngSubmit)="login()">
+  <mat-form-field class="form__input" >
+    <input matInput placeholder="{{'pages.auth.username' | translate}}" type="text" formControlName="username">
+  </mat-form-field>
+
+  <mat-form-field class="form__input">
+    <input matInput placeholder="{{'pages.auth.password' | translate}}" type="password" formControlName="password">
+  </mat-form-field>
+
+  <div class="form-actions">
+    <button 
+      class="form-actions__login" 
+      [class.spinner]="loading" 
+      [disabled]="loading" 
+      mat-raised-button 
+      (click)="login()">
+      {{'pages.auth.login' | translate}}
+    </button>
+  </div>
+  <div class="notification notification_transparent-red" *ngIf="login_error" >
+    <div class="notification__icon-wrapper notification__icon-wrapper_solid-red">
+      <mat-icon>report</mat-icon>
+    </div>
+    <p class="notification__title">{{ 'pages.auth.login_error' | translate }}</p>
+  </div>
+</form>

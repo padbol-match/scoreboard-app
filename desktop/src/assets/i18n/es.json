@@ -1,0 +1,46 @@
+{
+    "pages": {
+      "auth": {
+          "title": "Acceso",
+          "username": "Usuario",
+          "password": "Clave",
+          "login": "Acceso",
+          "copyright": "Padbol - Todos los derechos reservados",
+          "login_error": "Error de autenticación"
+      },
+      "fields": {
+          "title": "Canchas",
+          "id": "Id",
+          "press": "Pulsaciones",
+          "press_team_1": "Botón Equipo 1",
+          "press_team_2": "Botón Equipo 2",
+          "press_back": "Botón Volver"
+      },
+      "register_remote_controls":{
+          "title": "Registrar los controles remotos",
+          "button_team1": "Botón Equipo 1",
+          "button_team2": "Botón Equipo 2",
+          "button_back": "Botón de Volver",
+          "field_1": "Cancha 1",
+          "field_2": "Cancha 2",
+          "field_3": "Cancha 3",
+          "field_4": "Cancha 4"
+      }
+    },
+    "commons":{
+        "forms":{
+            "save": "Guardar"
+        },
+        "sidebar":{
+            "main": "Principal",
+            "fields": "Canchas",
+            "register_remote_controls": "Controles Remotos"
+        },
+        "language":{
+            "spanish": "Español",
+            "english": "Inglés"
+        }
+    }
+  
+}
+  

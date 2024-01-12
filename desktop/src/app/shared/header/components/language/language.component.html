@@ -1,0 +1,11 @@
+<button class="language-button" mat-mini-fab [matMenuTriggerFor]="bell">
+  <mat-icon matBadgeColor="warn" class="language-button__icon">language</mat-icon>
+</button>
+<mat-menu #bell="matMenu" xPosition="before" class="language-menu">
+  <button mat-menu-item class="language-menu__button" (click)="changeLanguage('es')">
+    {{ 'commons.language.spanish' | translate}}
+  </button>
+  <button mat-menu-item class="language-menu__button" (click)="changeLanguage('en')">
+    {{ 'commons.language.english' | translate}}
+  </button>
+</mat-menu>

@@ -1,0 +1,66 @@
+doctrine:
+    dbal:
+        default_connection: scoreboard
+        connections:
+            scoreboard:
+                # configure these for your database server
+                url: '%env(resolve:DATABASE_URL_SCOREBOARD)%'
+                driver: 'pdo_mysql'
+                server_version: '5.7'
+                charset: utf8mb4
+            match:
+                # configure these for your database server
+                url: '%env(resolve:DATABASE_URL_MATCH)%'
+                driver: 'pdo_mysql'
+                server_version: '5.7'
+                charset: utf8mb4
+                schema_filter: ~^(?!wp2e_)~
+
+        # IMPORTANT: You MUST configure your server version,
+        # either here or in the DATABASE_URL env var (see .env file)
+        #server_version: '13'
+    orm:
+        auto_generate_proxy_classes: true
+        default_entity_manager: scoreboard
+        entity_managers:
+            scoreboard:
+                connection: scoreboard
+                mappings:
+                    App:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Entity/Scoreboard'
+                        prefix: 'App\Entity\Scoreboard'
+                        alias: App
+            match:
+                connection: match
+                mappings:
+                    App:
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Entity/Match'
+                        prefix: 'App\Entity\Match'
+                        alias: App   
+
+when@test:
+    doctrine:
+        dbal:
+            # "TEST_TOKEN" is typically set by ParaTest
+            dbname_suffix: '_test%env(default::TEST_TOKEN)%'
+
+when@prod:
+    doctrine:
+        orm:
+            auto_generate_proxy_classes: false
+            query_cache_driver:
+                type: pool
+                pool: doctrine.system_cache_pool
+            result_cache_driver:
+                type: pool
+                pool: doctrine.result_cache_pool
+
+    framework:
+        cache:
+            pools:
+                doctrine.result_cache_pool:
+                    adapter: cache.app
+                doctrine.system_cache_pool:
+                    adapter: cache.system
